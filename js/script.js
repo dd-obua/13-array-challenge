@@ -7,8 +7,7 @@ const dogsJulia2 = [9, 16, 6, 8, 3];
 const dogsKate2 = [10, 5, 6, 1, 4];
 
 const checkDogs = function (dogsJulia, dogsKate) {
-  const dogsJuliaCorrected = dogsJulia.slice(1, -2);
-  const dogs = [...dogsJuliaCorrected, ...dogsKate];
+  const dogsJuliaCorrected = dogsJulia.slice();
 
   dogs.forEach(function (dog, i) {
     console.log(
