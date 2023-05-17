@@ -11,6 +11,8 @@ const checkDogs = function (dogsJulia, dogsKate) {
   dogsJuliaCorrected.splice(0, 1);
   dogsJuliaCorrected.splice(-2);
 
+  const dogs = [...dogsJuliaCorrected, ...dogsKate];
+
   dogs.forEach(function (dog, i) {
     console.log(
       `Dog number ${i + 1} is ${
