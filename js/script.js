@@ -8,6 +8,8 @@ const dogsKate2 = [10, 5, 6, 1, 4];
 
 const checkDogs = function (dogsJulia, dogsKate) {
   const dogsJuliaCorrected = dogsJulia.slice();
+  dogsJuliaCorrected.splice(0, 1);
+  dogsJuliaCorrected.splice(-2);
 
   dogs.forEach(function (dog, i) {
     console.log(
