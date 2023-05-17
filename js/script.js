@@ -11,7 +11,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
   dogsJuliaCorrected.splice(0, 1);
   dogsJuliaCorrected.splice(-2);
 
-  const dogs = [...dogsJuliaCorrected, ...dogsKate];
+  const dogs = dogsJuliaCorrected.concat(dogsKate);
 
   dogs.forEach(function (dog, i) {
     console.log(
