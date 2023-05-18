@@ -45,3 +45,9 @@ const calcAverageHumanAge = function (dogAges) {
   const average = adult.reduce((acc, age) => acc + age, 0) / adult.length;
   return average;
 };
+
+const avg1 = calcAverageHumanAge(data1);
+const avg2 = calcAverageHumanAge(data2);
+
+console.log('Average 1:', avg1);
+console.log('Average 2:', avg2);
