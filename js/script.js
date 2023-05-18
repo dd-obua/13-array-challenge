@@ -39,7 +39,6 @@ const calcAverageHumanAge = function (dogAges) {
 
 const dogAges1 = calcAverageHumanAge(data1);
 const dogAges2 = calcAverageHumanAge(data2);
-
 console.log(dogAges1);
 console.log(dogAges2);
 console.log();
