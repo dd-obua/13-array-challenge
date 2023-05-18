@@ -29,8 +29,6 @@ checkDogs(dogsJulia2, dogsKate2);
 console.log();
 
 // Challenge 2
-const data1 = [5, 2, 4, 1, 15, 8, 31];
-const data2 = [16, 6, 10, 5, 6, 1, 42];
 
 const calcAverageHumanAge = function (ages) {
   // Calculate dog ages in human years
@@ -43,6 +41,8 @@ const calcAverageHumanAge = function (ages) {
   const average = adult.reduce((acc, age) => acc + age, 0) / adult.length;
   return average;
 };
+const data1 = [5, 2, 4, 1, 15, 8, 3];
+const data2 = [16, 6, 10, 5, 6, 1, 4];
 
 const avg1 = calcAverageHumanAge(data1);
 const avg2 = calcAverageHumanAge(data2);
