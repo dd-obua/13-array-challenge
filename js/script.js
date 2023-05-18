@@ -44,6 +44,7 @@ const avg2 = calcAverageHumanAge(data2);
 
 console.log('Average 1:', avg1);
 console.log('Average 2:', avg2);
+console.log();
 
 // Challenge 3
 const dogs = [
@@ -55,3 +56,6 @@ const dogs = [
 
 // Part 1: Add recommended food portion to objects
 dogs.map(dog => (dog.recommemdedFood = dog.weight ** 0.75 * 28));
+
+// Part 2: Find Sarah's dog and log info about it
+const sarahsDog = dogs.filter(dog => dog.owners.includes('Sarah'));
