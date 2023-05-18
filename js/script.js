@@ -44,3 +44,14 @@ const avg2 = calcAverageHumanAge(data2);
 
 console.log('Average 1:', avg1);
 console.log('Average 2:', avg2);
+
+// Challenge 3
+const dogs = [
+  { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
+  { weight: 8, curFood: 200, owners: ['Matilda'] },
+  { weight: 13, curFood: 275, owners: ['Sarah', 'John'] },
+  { weight: 32, curFood: 340, owners: ['Michael'] },
+];
+
+// Part 1: Add recommended food portion to objects
+dogs.map(dog => (dog.recommemdedFood = dog.weight ** 0.75 * 28));
