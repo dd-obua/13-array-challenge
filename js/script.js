@@ -31,13 +31,8 @@ console.log();
 // Challenge 2
 
 const calcAverageHumanAge = function (ages) {
-  // Calculate dog ages in human years
   const humanAge = ages.map(age => (age > 2 ? 16 + age * 4 : 2 * age));
-
-  // Exlude dogs less than 18 years
   const adult = humanAge.filter(age => age >= 18);
-
-  // Calculate and return average
   const average = adult.reduce((acc, age, i, arr) => acc + age / arr.length, 0);
   return average;
 };
