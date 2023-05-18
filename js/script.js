@@ -59,3 +59,9 @@ dogs.map(dog => (dog.recommemdedFood = dog.weight ** 0.75 * 28));
 
 // Part 2: Find Sarah's dog and log info about it
 const sarahsDog = dogs.filter(dog => dog.owners.includes('Sarah'));
+
+let state;
+if (sarahsDog.curFood <= sarahsDog.recommemdedFood * 0.9) state = 'too little';
+else if (sarahsDog.curFood >= sarahsDog.recommemdedFood * 1.1)
+  state = 'too much';
+else state = 'okay';
