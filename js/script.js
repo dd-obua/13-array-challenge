@@ -39,4 +39,5 @@ const calcAverageHumanAge = function (dogAges) {
   );
   const adult = humanAge.filter(age => age >= 18);
   const average = adult.reduce((acc, age) => acc + age, 0) / adult.length;
+  return average;
 };
