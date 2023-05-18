@@ -37,6 +37,9 @@ const calcAverageHumanAge = function (dogAges) {
   return dogAges.map(dogAge => (dogAge > 2 ? 16 + dogAge * 4 : 2 * dogAge));
 };
 
-console.log(calcAverageHumanAge(data1));
-console.log(calcAverageHumanAge(data2));
+const dogAges1 = calcAverageHumanAge(data1);
+const dogAges2 = calcAverageHumanAge(data2);
+
+console.log(dogAges1);
+console.log(dogAges2);
 console.log();
