@@ -42,3 +42,10 @@ const dogAges2 = calcAverageHumanAge(data2);
 console.log(dogAges1);
 console.log(dogAges2);
 console.log();
+
+// Exlude dogs less than 18 years old
+const adultDogs1 = dogAges1.filter(dogAge => dogAge >= 18);
+const adultDogs2 = dogAges2.filter(dogAge => dogAge >= 18);
+console.log(adultDogs1);
+console.log(adultDogs2);
+console.log();
