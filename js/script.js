@@ -34,5 +34,7 @@ const data2 = [16, 6, 10, 5, 6, 1, 42];
 
 // Calculate dog ages in human years
 const calcAverageHumanAge = function (dogAges) {
-  return dogAges.map(dogAge => (dogAge > 2 ? 16 + dogAge * 4 : 2 * dogAge));
+  const humanAge = dogAges.map(dogAge =>
+    dogAge > 2 ? 16 + dogAge * 4 : 2 * dogAge
+  );
 };
