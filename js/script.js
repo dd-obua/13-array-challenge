@@ -1,5 +1,6 @@
 'use strict';
 
+// Challenge 1
 const dogsJulia = [3, 5, 2, 12, 7];
 const dogsKate = [4, 1, 15, 8, 3];
 
@@ -25,3 +26,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
 checkDogs(dogsJulia, dogsKate);
 console.log();
 checkDogs(dogsJulia2, dogsKate2);
+
+// Challenge 2
+const data1 = [5, 2, 4, 1, 15, 8, 31];
+const data2 = [16, 6, 10, 5, 6, 1, 42];
