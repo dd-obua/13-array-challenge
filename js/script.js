@@ -26,6 +26,7 @@ const checkDogs = function (dogsJulia, dogsKate) {
 checkDogs(dogsJulia, dogsKate);
 console.log();
 checkDogs(dogsJulia2, dogsKate2);
+console.log();
 
 // Challenge 2
 const data1 = [5, 2, 4, 1, 15, 8, 31];
