@@ -65,3 +65,4 @@ if (sarahsDog.curFood <= sarahsDog.recommemdedFood * 0.9) state = 'too little';
 else if (sarahsDog.curFood >= sarahsDog.recommemdedFood * 1.1)
   state = 'too much';
 else state = 'okay';
+console.log(`Sarah's dog is eating ${state}.`);
