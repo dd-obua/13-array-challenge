@@ -69,3 +69,11 @@ const ownersEatTooMuch = dogs
   .reduce((acc, owners) => acc.concat(owners));
 console.log(ownersEatTooMuch);
 console.log();
+
+// Create owners of dogs which eat too little
+const ownersEatTooLittle = dogs
+  .filter(dog => dog.curFood <= dog.recommemdedFood * 0.9)
+  .map(dog => dog.owners)
+  .reduce((acc, owners) => acc.concat(owners));
+console.log(ownersEatTooLittle);
+console.log();
