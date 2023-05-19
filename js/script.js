@@ -86,7 +86,7 @@ console.log();
 // Check if any dog is eating exactly as recommended
 console.log(
   dogs.reduce(
-    (acc, dog) => acc === false || dog.curFood === dog.recommemdedFood,
+    (acc, dog) => (acc = false || dog.curFood === dog.recommemdedFood),
     false
   )
 );
