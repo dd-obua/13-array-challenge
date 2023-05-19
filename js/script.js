@@ -112,3 +112,6 @@ const dogsOkay = dogs.filter(
 );
 console.log(dogsOkay);
 console.log();
+
+// Create a shallow copy of dogs array
+const dogsCopy = dogs.slice();
