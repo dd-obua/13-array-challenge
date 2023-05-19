@@ -77,3 +77,5 @@ const ownersEatTooLittle = dogs
   .reduce((acc, owners) => acc.concat(owners));
 console.log(ownersEatTooLittle);
 console.log();
+
+console.log(`${ownersEatTooMuch.join(' and ')}'s dogs eat too much!`);
