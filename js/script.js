@@ -116,3 +116,7 @@ console.log('----------------------------------');
 // Create a shallow copy of dogs array
 const dogsCopy = dogs.slice();
 console.log(dogsCopy);
+console.log('----------------------------------');
+
+const dogsSorted = dogsCopy.sort((a, b) => a.curFood - b.curFood);
+console.log(dogsSorted);
