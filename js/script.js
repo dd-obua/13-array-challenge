@@ -103,3 +103,12 @@ console.log(
   )
 );
 console.log();
+
+// Find dogs eating okay
+const dogsOkay = dogs.filter(
+  dog =>
+    dog.curFood > dog.recommemdedFood * 0.9 &&
+    dog.curFood < dog.recommemdedFood * 1.1
+);
+console.log(dogsOkay);
+console.log();
