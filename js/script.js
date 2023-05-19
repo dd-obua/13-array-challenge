@@ -68,3 +68,4 @@ const ownersEatTooMuch = dogs
   .map(dog => dog.owners)
   .reduce((acc, owners) => acc.concat(owners));
 console.log(ownersEatTooMuch);
+console.log();
