@@ -1,5 +1,7 @@
 'use strict';
 
+// Combined array challenges
+
 // Challenge 1
 const julia1 = [3, 5, 2, 12, 7],
   kate1 = [4, 1, 15, 8, 3];
@@ -88,6 +90,7 @@ console.log(`${ownersEatTooLittle.join(' and ')}'s dogs eat too little!`);
 console.log();
 
 console.log(
+  'Dogs eating exactly as recommended:',
   dogs.reduce(
     (acc, dog) => (acc = false || dog.curFood === dog.recommendedFood * 0.9)
   )
@@ -95,11 +98,28 @@ console.log(
 console.log();
 
 console.log(
+  'Dogs eating okay:',
   dogs.reduce(
     (acc, dog) =>
       (acc =
         false ||
-        (dog.curFood > dog.recommendedFood &&
-          dog.curFood < dog.recommendedFood))
+        (dog.curFood > dog.recommendedFood * 0.9 &&
+          dog.curFood < dog.recommendedFood * 1.1))
   )
 );
+console.log();
+
+const dogsEatingOkay = dogs.filter(
+  dog =>
+    dog.curFood > dog.recommendedFood * 0.9 &&
+    dog.curFood < dog.recommendedFood * 1.1
+);
+console.log('Dogs eating okay:', dogsEatingOkay);
+console.log('----------------------------------------');
+
+const dogsCopy = dogs.slice();
+console.log('Dogs copy:', dogsCopy);
+console.log('----------------------------------------');
+const dogsCopySorted = dogsCopy.sort((a, b) => a.curFood - b.curFood);
+console.log('Dogs copy sorted:', dogsCopySorted);
+console.log();
