@@ -89,3 +89,4 @@ console.log(
     (acc, dog) => (acc = false || dog.curFood === dog.recommemdedFood)
   )
 );
+console.log();
