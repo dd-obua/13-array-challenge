@@ -60,3 +60,11 @@ dogs.map(dog => (dog.recommemdedFood = dog.weight ** 0.75 * 28));
 // Part 2: Find Sarah's dog and log info about it
 const sarahsDog = dogs.filter(dog => dog.owners.includes('Sarah'));
 console.log(sarahsDog);
+console.log('----------------------------------');
+
+// Create owners of dogs which eat too much
+const ownersEatTooMuch = dogs
+  .filter(dog => dog.curFood >= dog.recommemdedFood * 1.1)
+  .map(dog => dog.owners)
+  .reduce((acc, owners) => acc.concat(owners));
+console.log(ownersEatTooMuch);
