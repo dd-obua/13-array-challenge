@@ -90,3 +90,16 @@ console.log(
   )
 );
 console.log();
+
+// Check and log if any dog is eating okay
+console.log(
+  dogs.reduce(
+    (acc, dog) =>
+      (acc =
+        false ||
+        (dog.curFood > dog.recommemdedFood * 0.9 &&
+          dog.curFood < dog.recommemdedFood * 1.1)),
+    false
+  )
+);
+console.log();
