@@ -79,3 +79,5 @@ console.log(ownersEatTooLittle);
 console.log();
 
 console.log(`${ownersEatTooMuch.join(' and ')}'s dogs eat too much!`);
+console.log(`${ownersEatTooLittle.join(' and ')}'s owners eat too little!`);
+console.log();
