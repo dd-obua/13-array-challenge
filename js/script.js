@@ -111,7 +111,8 @@ const dogsOkay = dogs.filter(
     dog.curFood < dog.recommemdedFood * 1.1
 );
 console.log(dogsOkay);
-console.log();
+console.log('----------------------------------');
 
 // Create a shallow copy of dogs array
 const dogsCopy = dogs.slice();
+console.log(dogsCopy);
