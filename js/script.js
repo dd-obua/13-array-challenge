@@ -48,7 +48,7 @@ console.log('Average 1:', avg1);
 console.log('Average 2:', avg2);
 console.log();
 
-// Challenge 3
+// Challenge 4
 const dogs = [
   { weight: 22, curFood: 250, owners: ['Alice', 'Bob'] },
   { weight: 8, curFood: 200, owners: ['Matilda'] },
@@ -95,16 +95,13 @@ console.log(
 console.log();
 
 // Check and log if any dog is eating okay
-console.log(
-  dogs.reduce(
-    (acc, dog) =>
-      (acc =
-        false ||
-        (dog.curFood > dog.recommemdedFood * 0.9 &&
-          dog.curFood < dog.recommemdedFood * 1.1)),
-    false
-  )
+const eatingOkay = dogs.find(
+  dog =>
+    dog.curFood > dog.recommemdedFood * 0.9 &&
+    dog.curFood < dog.recommemdedFood * 1.1
 );
+console.log('Dogs eating okay?', false || eatingOkay.length > 0);
+
 console.log();
 
 // Find dogs eating okay
