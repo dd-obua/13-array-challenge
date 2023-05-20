@@ -39,14 +39,24 @@ const calcAverageHumanAge = function (ages) {
 const data1 = [5, 2, 4, 1, 15, 8, 3];
 const data2 = [16, 6, 10, 5, 6, 1, 4];
 
-// Challenge 3 - Challenge 2 using arrow functions
-
 const avg1 = calcAverageHumanAge(data1);
 const avg2 = calcAverageHumanAge(data2);
 
 console.log('Average 1:', avg1);
 console.log('Average 2:', avg2);
 console.log();
+
+// Challenge 3 - Challenge 2 using arrow functions
+const calcAverageHumanAgeArrow = ages =>
+  ages
+    .map(age => (age > 2 ? 16 + age * 4 : 2 * age))
+    .filter(age => (age = 18))
+    .reduce((acc, age, i, arr) => acc + age / arr.length);
+
+const average1 = calcAverageHumanAgeArrow(data1);
+const average2 = calcAverageHumanAgeArrow(data2);
+console.log('Average 1:', average1);
+console.log('Average 2:', average2);
 
 // Challenge 4
 const dogs = [
