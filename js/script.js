@@ -42,8 +42,8 @@ const data2 = [16, 6, 10, 5, 6, 1, 4];
 const avg1 = calcAverageHumanAge(data1);
 const avg2 = calcAverageHumanAge(data2);
 
-console.log('Average 1:', avg1);
-console.log('Average 2:', avg2);
+console.log('Ave 1:', avg1);
+console.log('Ave 2:', avg2);
 console.log();
 
 // Challenge 3 - Challenge 2 using arrow functions
